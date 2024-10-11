@@ -1,0 +1,14 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: "spring-config-server"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "classpath:/config"
+#          search-locations: "file:///D:/java-project/dh-prj/java-t/k8s/k8s-volume/spring-config-server/src/main/resources/config"

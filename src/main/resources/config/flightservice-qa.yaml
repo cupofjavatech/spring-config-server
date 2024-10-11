@@ -1,0 +1,9 @@
+trainservice:
+  SupportDetails:
+    Personal:
+      name: "Flight Service - QA"
+    ContactDetails:
+      email: flightservice@cupofjavatech.com
+      phone:
+        - 1 (800) 555-223
+        - 1 (800) 555-221

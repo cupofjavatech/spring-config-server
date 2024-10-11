@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-server-deploy
+  labels:
+    app: config-server-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: config-server
+  template:
+    metadata:
+      labels:
+        app: config-server
+    spec:
+      containers:
+      - name: config-server
+        image: cupofjavatech/springconfigserver:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8071
+        env:
+          - name: SPRING_APPLICATION_NAME
+            value: spring-config-server
+          - name: SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH-LOCATIONS
+            value: "/app/config"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: config-server-service
+spec:
+  selector:
+    app: config-server-deploy
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8071
+      targetPort: 8071

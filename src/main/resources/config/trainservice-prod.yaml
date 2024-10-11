@@ -1,0 +1,9 @@
+trainservice:
+  SupportDetails:
+    Personal:
+      name: "Train Service - Prod"
+    ContactDetails:
+      email: trainservice@cupofjavatech.com
+      phone:
+        - 1 (800) 333-223
+        - 1 (800) 333-221

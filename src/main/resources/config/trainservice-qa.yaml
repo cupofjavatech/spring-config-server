@@ -1,0 +1,9 @@
+trainservice:
+  SupportDetails:
+    Personal:
+      name: "Train Service - QA"
+    ContactDetails:
+      email: trainservice@cupofjavatech.com
+      phone:
+        - 1 (800) 222-223
+        - 1 (800) 222-221

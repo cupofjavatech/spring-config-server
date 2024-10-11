@@ -1,0 +1,9 @@
+trainservice:
+  SupportDetails:
+    Personal:
+      name: "Flight Service - Prod"
+    ContactDetails:
+      email: flightservice@cupofjavatech.com
+      phone:
+        - 1 (800) 777-223
+        - 1 (800) 777-221
