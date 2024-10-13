@@ -1,3 +1,5 @@
+https://github.com/cupofjavatech/spring-config-server
+
 # Spring Boot - Config Server
 
 This Spring Boot Maven project is created to demonstrate how Kubernetes Volume works.
@@ -21,6 +23,10 @@ Accessing Train Service Configuration - for Default (Dev), qa, prod
 http://localhost:8071/trainservice/default  
 http://localhost:8071/trainservice/qa  
 http://localhost:8071/trainservice/prod  
+
+# Spring Application Useful Command
+Building application : mvn clean install
+Running Application locally : mvn spring-boot:run
 
 # k8S Command
 All K8s files under : spring-config-server\k8s  
